@@ -1,9 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Video Embed</title>
+    <title>Centered Video Embed</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Optional: for better visibility */
+        }
+        .video-container {
+            width: 608px; /* Same as the video width */
+            height: 402px; /* Same as the video height */
+        }
+    </style>
 </head>
 <body>
-    <iframe width="608" height="402" src="https://mediaspace.esri.com/embed/secure/iframe/entryId/1_wjyn2zpd/uiConfId/49806163/st/0" frameborder="0" allowfullscreen></iframe>
+    <div class="video-container">
+        <iframe width="608" height="402" src="https://mediaspace.esri.com/embed/secure/iframe/entryId/1_wjyn2zpd/uiConfId/49806163/st/0" frameborder="0" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
+
